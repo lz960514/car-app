@@ -1,0 +1,135 @@
+.news-item {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    background: #fff;
+    &.border {
+        margin-bottom: 20px;
+    }
+    >.header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 100px;
+        >.avatr {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background: #ccc;
+            font-size: 0;
+            >img {
+                display: block;
+                width: inherit;
+                border-radius: inherit;
+            }
+        }
+        >.userinfo {
+            flex: 1;
+            padding-left: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            font-size: 26px;
+            >.top {
+                padding: 0;
+                margin: 0;
+                font-size: 32px;
+                color: #333;
+            }
+            >.bottom {
+                display: flex;
+                flex-flow: row nowrap;
+                padding: 0;
+                margin: 0;
+                >.date {
+                    color: #999;
+                }
+                >.car-type {
+                    color: #ff85b5;
+                    margin-left: 20px;
+                }
+            }
+        }
+        >.arrow-down {
+            width: 40px;
+            height: inherit; // background: red;
+            display: flex;
+            justify-content: center;
+            >.iconfont {
+                font-size: 40px;
+                color: #999;
+            }
+        }
+    }
+    >.main {
+        height: auto;
+        min-height: 220px;
+        >.content {
+            padding: 0;
+            margin: 10px 0;
+            color: #333;
+            font-size: 28px;
+            line-height: 40px;
+        }
+        >.photos {
+            list-style-type: none;
+            padding: 0;
+            margin: 6px 0;
+            >li {
+                font-size: 0;
+                float: left;
+                width: 222px;
+                margin: 2.2px;
+                >img {
+                    display: inherit;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    >.footer {
+        height: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        >.info {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            >span {
+                margin: 0 10px 0 0;
+                font-style: italic;
+                font-size: 28px;
+                color: #999;
+            }
+        }
+        >.btns {
+            width: 200px;
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            >.iconfont {
+                display: block;
+                width: 44px;
+                height: 44px;
+                text-align: center;
+                line-height: 44px;
+                color: #fff;
+                background: #ccc;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 36px;
+                &:hover{
+                    background: #ff85b5;
+                }
+            }
+        }
+    }
+}

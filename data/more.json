@@ -1,0 +1,21 @@
+[{
+        "title": "新消息提醒",
+        "value": false,
+        "btn": true
+    },
+    {
+        "title": "允许陌生人查看车辆信息",
+        "value": false,
+        "btn": true
+    },
+    {
+        "title": "非WIFI下加载视频",
+        "value": true,
+        "btn": true
+    },
+    {
+        "title": "清理缓存",
+        "btn": false,
+        "text": 65.4
+    }
+]

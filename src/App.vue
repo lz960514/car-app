@@ -1,31 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <transition :enter-active-class="enterAnimated" :leave-active-class="leaveAnimated">
+      <keep-alive>
+        <router-view/>
+      </keep-alive>
+    </transition>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script>
+export default {
+  data() {
+    return {
+      enterAnimated: "animation fadeInRight",
+      leaveAnimated: "animation fadeOutLeft"
+    };
+  },
+  watch: {
+    $route(to, from) {
+      const toDepth = to.path.length;
+      const fromDepth = from.path.length;
+      if (toDepth > fromDepth) {
+        this.enterAnimated = "animation fadeInRight";
+        this.leaveAnimated = "animation fadeOutLeft";
+      } else if (toDepth < fromDepth) {
+        this.enterAnimated = "animation fadeInLeft";
+        this.leaveAnimated = "animation fadeOutRight";
+      }
+    }
+  }
+};
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lang="less">
+@import url("./assets/styles/app.less");
 </style>

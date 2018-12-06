@@ -1,0 +1,43 @@
+// 全局css
+.mint-header {
+    background: #ff85b5;
+    height: 100px;
+    font-size: 32px;
+    width: 100vw;
+}
+
+.mint-cell-title {
+    display: flex;
+    align-items: center;
+    >.iconfont {
+        margin-right: 20px;
+    }
+}
+
+.mint-cell-value span {
+    font-size: 28px;
+}
+
+.mint-switch-input:checked+.mint-switch-core {
+    background: #ff85b5;
+    border-color: #ff85b5;
+}
+
+.mint-switch-core {
+    width: 82px;
+    height: 42px;
+}
+
+.mint-switch-core::before {
+    width: 80px;
+    height: 40px;
+}
+
+.mint-switch-core::after {
+    width: 36px;
+    height: 36px;
+}
+
+.mint-switch-input:checked+.mint-switch-core::after {
+    transform: translateX(44px)
+}

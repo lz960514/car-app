@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "RuiHeiXiTi";
+    src: url("https://www.thenewstnp.com/fonts/RuiHeiXiTi.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: "RuiHeiXiTi", sans-serif;
+    overflow: hidden;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.clearfix:after {
+    content: "**";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+} // 动画切换过渡时间
+.animation {
+    animation-duration: 0.2s;
+}

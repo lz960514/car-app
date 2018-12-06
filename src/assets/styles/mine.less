@@ -1,0 +1,93 @@
+.mine {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    background: #fafafa;
+    height: 100vh;
+    position: absolute;
+}
+
+.userinfo {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 160px;
+    align-items: center;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    cursor: pointer;
+    .avatr {
+        width: 120px;
+        height: 120px;
+        background: #ccc;
+        border-radius: 50%;
+        font-size: 0;
+        margin-right: 30px;
+        img {
+            display: block;
+            width: inherit;
+            border-radius: 50%;
+        }
+    }
+    .info {
+        flex: 1;
+        height: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        .name {
+            margin-bottom: 10px;
+            color: #ff85b9;
+            font-size: 32px;
+        }
+        .phone {
+            font-size: 30px;
+            color: #999;
+        }
+    }
+    .right {
+        width: 40px;
+        height: inherit;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-right: 20px;
+        .iconfont {
+            border: none;
+            font-size: 32px;
+            color: #999;
+            font-weight: 500;
+        }
+    }
+}
+
+.list {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    background: #fff;
+}
+
+.iconfont {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    &.icon-share {
+        font-size: 26px;
+    }
+}
+
+.mint-cell {
+    margin: 0 20px;
+}
+
+.mint-cell.border {
+    border-bottom: 1px solid #f2f2f2;
+}

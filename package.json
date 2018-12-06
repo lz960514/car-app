@@ -7,17 +7,35 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
+    "mint-ui": "^2.2.13",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@types/jquery": "^3.3.22",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "postcss": "^7.0.6",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-px-to-viewport": "^0.0.3",
+    "precss": "^4.0.0",
     "vue-template-compiler": "^2.5.17"
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "precss": {},
+      "postcss-px-to-viewport": {
+        "viewportWidth": "720",
+        "viewportUnit": "vmin"
+      }
     }
   },
   "browserslist": [

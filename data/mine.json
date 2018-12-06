@@ -1,0 +1,43 @@
+{
+    "list": [{
+            "title": "账户余额",
+            "icon": "logo-yen",
+            "value": "1585.25元"
+        },
+        {
+            "title": "车辆信息",
+            "icon": "ios-car"
+        },
+        {
+            "title": "我的订单",
+            "icon": "md-paper"
+        },
+        {
+            "title": "我的发布",
+            "icon": "md-paper-plane"
+        }
+    ],
+    "list2": [{
+            "title": "意见反馈",
+            "icon": "md-create"
+        },
+        {
+            "title": "关于车友汇",
+            "icon": "md-information1"
+        },
+        {
+            "title": "分享车友汇",
+            "icon": "share"
+        },
+        {
+            "title": "检测跟新",
+            "icon": "md-sync"
+        },
+        {
+            "title": "更多设置",
+            "icon": "ios-settings",
+            "to": "/mine/more"
+        }
+    ]
+
+}
